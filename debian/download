@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# Little script to help downloading new upstream releases.
+#
+
+FILES="kanjidic.gz kanjidic_doc_legacy.html kanjidic2.xml.gz kanjidic2_dtdh.html kanjidic2_ov.html kanjidic2_xsd.gz"
+
+mkdir /tmp/kdict
+cd /tmp/kdict
+
+for f in $FILES
+do
+    if [ ! -f $f ]
+    then
+	wget http://www.edrdg.org/kanjidic/$f
+    fi
+done
+
+wget -O kanjidic_doc.html http://www.edrdg.org/wiki/index.php/KANJIDIC_Project
+
+# remove SKIP codes
+zcat kanjidic.gz|sed 's/ P[0-9]*-[0-9]*-[0-9]*//g' > kanjidic
+VER=`head -1 kanjidic|grep -o 202.-..-..|tr - .`
+rm kanjidic.gz
+gzip kanjidic
+
+cd ..
+tar cvzf /tmp/kanjidic-$VER.tar.gz kdict
+

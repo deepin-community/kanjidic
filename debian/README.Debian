@@ -1,0 +1,8 @@
+kanjidic for Debian
+----------------------
+
+This package is the kanji dictionary used by both xjdic and kdrill.
+The documentation also content a good explanation of the most popular
+kanji classifications.
+
+ -- Hayao Nakahara <nakahara@debian.org>, Sun, 10 Oct 1999 11:44:47 +0900

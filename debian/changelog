@@ -1,0 +1,147 @@
+kanjidic (2021.03.02-1) unstable; urgency=low
+
+  * New upstream release
+  * Updated the download script and documentation
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Tue, 02 Mar 2021 11:29:37 +0100
+
+kanjidic (2020.06.29-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Tue, 30 Jun 2020 14:06:23 +0200
+
+kanjidic (2019.02.17-1) unstable; urgency=medium
+
+  * New upstream release
+  * refreshed the download script with new URLs
+  * removed dh_clean -k
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Mon, 18 Feb 2019 11:39:50 +0100
+
+kanjidic (2016.11.30-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Thu, 01 Dec 2016 6:40:40 +0100
+
+kanjidic (2014.09.01-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Mon, 01 Sep 2014 22:55:19 +0200
+
+kanjidic (2012.05.09-1) unstable; urgency=low
+
+  * New upstream release
+  * Added kanjidic2.xml. Closes: #619603
+  * Removed Florian Ernst from uploaders. Closes: #658655
+  * Moved the xml data to the kanjidic2-xml package
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Wed, 09 May 2012 14:17:34 +0200
+
+kanjidic (2011.05.25-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Wed, 25 May 2011 19:59:41 +0200
+
+kanjidic (2008.02.13-1) unstable; urgency=high
+
+  * New upstream release
+  * RC bug fix: urgency = high
+  * The maintainer changed the license to CC by-sa 3.0. Closes: #445021
+  * Updated the license in the copyright file
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Wed, 13 Feb 2008 19:27:22 +0100
+
+kanjidic (2007.02.10-1) unstable; urgency=low
+
+  * New upstream release.
+  * Added Florian Ernst as a co-maintainer.
+  * Improved the download script.
+  * Added overrides files.
+  * dh_helper >= 5 is now needed.
+  * Bump Standards-Version to 3.7.2
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Sat, 10 Feb 2007 00:20:50 +0100
+
+kanjidic (2006.10.09-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload. Even though I already co-maintain the similar
+    edict package I didn't receive explicit permission to add myself as
+    a co-maintainer for this package as well.
+  * urgency=medium in order to get this into etch in time
+  * New upstream relase
+  * debian/control: move debhelper to Build-Depends as it is used during
+    debian/rules clean
+
+ -- Florian Ernst <florian@debian.org>  Mon,  9 Oct 2006 17:10:00 +0200
+
+kanjidic (2004.08.13-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Thu, 23 Jun 2005 21:25:01 +0200
+
+kanjidic (2004.03.10-1) unstable; urgency=low
+
+  * New upstream release. Closes: Bug#247696
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Thu,  3 Jun 2004 21:36:40 +0200
+
+kanjidic (2003.09.01-1) unstable; urgency=low
+
+  * New upstream release
+  * Removed Jack Halpern's copyright statement since SKIP codes are removed.
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Wed, 24 Dec 2003 10:24:00 +0100
+
+kanjidic (2003.07.21-1) unstable; urgency=low
+
+  * New upstream release
+  * New license that allows modifications and free redistribution: now in main
+  * New maintainer. Closes: #192690
+  * removed SKIP codes. Closes: #182652
+  * added debian/download to build a new source tar and remove SKIP codes
+
+ -- Ludovic Drolez <ldrolez@debian.org>  Sat, 26 Jul 2003 15:57:55 +0200
+
+kanjidic (2002.02.06-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix description in control. (closes: #144339)
+  * install kanjidic as /usr/share/edict/kanjidic. (closes: #150603)
+
+ -- Hayao Nakahara <nakahara@debian.org>  Mon, 24 Jun 2002 11:46:18 +0900
+
+kanjidic (2001.05.22-1) unstable; urgency=low
+
+  * New upstream release. (closes: #103956)
+
+ -- Hayao Nakahara <nakahara@debian.org>  Fri,  3 Aug 2001 16:24:01 +0900
+
+kanjidic (2000.03.25-1) unstable; urgency=low
+
+  * New upstream release (kanjidic.doc only).
+
+ -- Hayao Nakahara <nakahara@debian.org>  Thu, 25 Jan 2001 02:17:09 +0900
+
+kanjidic (1999.01.28-1) unstable; urgency=low
+
+  * New upstream source.
+  * New maintainer.
+  * Fix for bug #46478, change Architecture to all.
+  * modified postinst and prerm scripts.
+
+ -- Hayao Nakahara <nakahara@debian.org>  Sun, 10 Oct 1999 11:44:47 +0900
+
+kanjidic (0-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Fabien Ninoles <fab@tzone.org>  Mon,  5 Oct 1998 01:35:12 -0400
+
+Local variables:
+mode: debian-changelog
+End:

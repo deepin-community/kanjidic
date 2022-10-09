@@ -1,0 +1,22 @@
+Source: kanjidic
+Section: text
+Priority: optional
+Maintainer: Ludovic Drolez <ldrolez@debian.org>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.5.1
+
+Package: kanjidic
+Architecture: all
+Depends: ${misc:Depends}
+Description: Kanji Dictionary
+ The KANJIDIC file contains comprehensive information about Japanese kanji. 
+ It is a text file currently 6,355 lines long, with one line for each kanji
+ in the two levels of the characters specified in the JIS X 0208-1990  set.
+
+Package: kanjidic-xml
+Architecture: all
+Depends: ${misc:Depends}
+Description: Kanji Dictionary in XML format
+ The KANJIDIC file contains comprehensive information about Japanese kanji. 
+ It is a XML file containing 6,355 kanji from JIS X 0208, the 5,801 kanji from
+ JIS X 0212 and the 3,625 kanji from JIS X 0213.
